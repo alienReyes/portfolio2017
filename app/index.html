@@ -1,0 +1,130 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+
+    <title>Podcasts Repository</title>
+
+
+
+
+    <!--build:css css/style.min.css-->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
+    <!-- endbower -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--endbuild-->
+</head>
+
+<body>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h3 class="display-5">Final Project: Developing a Strategic Plan </h3>
+    </div>
+  </div>
+  <div class="container-fluid container--video">
+  <div class="row">
+    <div class="col-md-8 offset-md-3">
+          <iframe src="" frameborder="0" id="videoContainer" src=null></iframe>
+    </div>
+  </div>
+  <div class="row grid">
+
+  </div>
+
+
+  </div>
+
+
+
+
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<!-- Button trigger modal -->
+
+<!-- Modal -->
+<!-- //hiden kaltura player -->
+
+
+    <!--build:js js/main.min.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/tether/dist/js/tether.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/mustache.js/mustache.js"></script>
+    <script src="bower_components/jquery.easing/js/jquery.easing.js"></script>
+    <!-- endbower -->
+    <script src="js/main.js"></script>
+    <!-- endbuild -->
+
+
+
+<script id="buttons__Grid" type="text/template">
+  {{#items}}
+<div class="col-md-4">
+  <figure class="roll-over">
+              <img src="images/{{itemImage}}.jpg" alt="img27"/>
+              <figcaption>
+                <h2>{{title}}<span></span></h2>
+                <p>{{description}}</p>
+
+
+                <a class="clickFigure"  data-target={{referenceID}} data-title={{title}}  href="#">View more</a>
+              </figcaption>
+  </figure>
+  </div>
+  {{/items}}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+</html>

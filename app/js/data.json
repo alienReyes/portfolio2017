@@ -1,0 +1,37 @@
+{
+    "items": [{
+        "id": "g1",
+        "index":"01.",
+        "image": "arson_1",
+        "title": "Introduction to the Final Project",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec magna vitae lorem sodales eleifend id sed dolor.",
+        "referenceID":"video1",
+        "assets":"/WAL/EDUC/6610/02/WAL_EDUC6610_02_C_EN"
+
+    } ,
+    {
+        "id": "g2",
+        "index":"02.",
+        "image": "27",
+        "title": "Part 1: The fundamentals",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec magna vitae lorem sodales eleifend id sed dolor.",
+        "referenceID":"video2",
+        "assets":"WAL/HUMN/8152B/02/WAL_HUMN8152B_02_B_EN"
+
+    } ,
+    {
+        "id": "g3",
+        "index":"03.",
+        "image": "30",
+        "title": "Part 2: The the Technical Elements",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec magna vitae lorem sodales eleifend id sed dolor.",
+        "referenceID":"video2"
+    }
+
+
+
+  ]
+
+
+
+}
