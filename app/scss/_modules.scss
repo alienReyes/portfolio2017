@@ -1,0 +1,47 @@
+.nav-menu {
+  font-size:1.4rem;
+  line-height:1;
+   color: black;
+
+
+   .btn__nav {
+     color:black;
+     font-weight: 300;
+      text-align: center;
+      padding:5px;
+      margin-bottom:10px;
+      line-height: 1;
+      float: left;
+     &--active {
+
+       background-color: black;
+       color:#fff;
+
+
+     }
+
+   }
+
+}
+
+
+/*header styles*/
+
+.main-header {
+  padding-top: 85px;
+}
+
+.main-title {
+
+  h1 {
+    font-size: 3.5rem;
+    font-weight:700;
+  }
+  .job-title{
+    font-weight:300;
+    font-size: 2.7rem;
+    line-height: .6;
+  }
+  font-family: $refrigerator;
+
+}
