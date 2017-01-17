@@ -1,47 +1,67 @@
+// nav bar
+
 .nav-menu {
-  font-size:1.4rem;
+
+}
+
+.menu-container {
+  font-size:1.2rem;
   line-height:1;
    color: black;
+  position: absolute;
+  bottom:-95px;
 
+  .btn__nav {
+    color:black;
+    font-weight: 300;
+     text-align: center;
+     padding:5px;
+     line-height: 1;
+     float: left;
+    &--active {
+      background-color: black;
+      color:#fff;
+    }
 
-   .btn__nav {
-     color:black;
-     font-weight: 300;
-      text-align: center;
-      padding:5px;
-      margin-bottom:10px;
-      line-height: 1;
-      float: left;
-     &--active {
+}
+  }
+//main-grid-container
 
-       background-color: black;
-       color:#fff;
+.thumb--item {
+  overflow: hidden;
+  figure {
+    width: 100%;
+    position: relative;
+    height: calc( width - 1px);
+    background-color: #000;
+    overflow:hidden;
+    img {
 
+      @include customTransition(all,.5s,ease );
+      position:  absolute;
+    	top: 0;
+    	left: 0;
+    	bottom: 0;
+    	right: 0;
+      width: auto;
+      height: 100%;
+      opacity:1;
+      @include transform(scale3d(1, 1, 1));
 
-     }
-
+ }
+&:hover {
+   img {
+       opacity:.5;
+         @include transform(scale3d(1.2, 1.2, 1));
    }
-
 }
 
-
-/*header styles*/
-
-.main-header {
-  padding-top: 85px;
+ //trick for aspect ratio
+ &:before{
+	content: "";
+	display: block;
+	padding-top: 100%; 	/* initial ratio of 1:1*/
 }
-
-.main-title {
-
-  h1 {
-    font-size: 3.5rem;
-    font-weight:700;
   }
-  .job-title{
-    font-weight:300;
-    font-size: 2.7rem;
-    line-height: .6;
-  }
-  font-family: $refrigerator;
 
 }

@@ -1,13 +1,37 @@
-.grid-row{
-  background-color: $md-brown-50;
-}
+
 
 .portfolio-thumb {
-  padding: 0px;
-  background-color: $md-deep-orange-300;
-  margin: 25px;
-  height: 230px;
+background-color: $highlight;
   p {
     background-color: white;
   }
+}
+
+.grid-row {
+  background-color:#fff;
+
+}
+
+
+
+/*header styles*/
+
+.main-header {
+  padding-top:35px;
+  padding-bottom:25px;
+}
+
+.main-title {
+
+  h1 {
+    font-size: 3.5rem;
+    font-weight:700;
+  }
+  .job-title{
+    font-weight:300;
+    font-size: 2.7rem;
+    line-height: .6;
+  }
+  font-family: $refrigerator;
+
 }
