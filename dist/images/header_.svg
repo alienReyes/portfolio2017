@@ -10,9 +10,9 @@
 	.st4{font-size:43px;}
 </style>
 <g id="black_x5F_letter">
-	<path d="M1366,103L0,195V0h1366V103z"/>
+	<polygon points="1366,103 0,195 0,0 1366,0 	"/>
 </g>
 <g id="white_x5F_leter">
-	<text transform="matrix(1 0 0 1 85.7271 90.7852)"><tspan x="0" y="0" class="st0 st1 st2">Rodrigo Reyes</tspan><tspan x="0" y="41" class="st0 st3 st4">Web designer</tspan></text>
+	<text class='main-title' transform="matrix(1 0 0 1 85.7271 90.7852)"><tspan x="0" y="0" class="st0 st1 st2">Rodrigo Reyes</tspan><tspan class="job-title" x="0" y="41" class="st0 st3 st4">Web designer</tspan></text>
 </g>
 </svg>

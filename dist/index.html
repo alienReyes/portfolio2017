@@ -9,12 +9,7 @@
 
     <title>Rodrigo Reyes Portfolio</title>
 
-    <!--build:css css/style.min.css-->
-    <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
-    <!-- endbower -->
-    <link rel="stylesheet" href="css/style.css">
-    <!--endbuild-->
+    <link rel="stylesheet" href="css/style.min.css">
     <script src="https://use.typekit.net/wjh8xkf.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
@@ -23,26 +18,22 @@
 
 <header class="main-header">
 
-  <svg id="decoration" x="0px" y="0px" viewBox="0 0 1366 215"  preserveAspectRatio="none">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  	 viewBox="0 0 1366 215" style="enable-background:new 0 0 1366 768;" xml:space="preserve">
   <style type="text/css">
   	.st1{font-family:'refrigerator-deluxe';}
   	.st3{font-family:'refrigerator-deluxe';}
   </style>
-  <defs>
-    <filter id="matrix-invert">
-      <feColorMatrix in="SourceGraphic" type="matrix" values="-1 0 0 0 1
-                                                              0 -1 0 0 1
-                                                              0 0 -1 0 1
-                                                              0 0 0 1 0"/>
-   </filter>
-  </defs>
-
-
   <g id="blackStripe">
-    <path d="M0,L0,195V0h1366V0z"/>
+  	<polygon points="1366,103 0,195 0,0 1366,0 	"/>
   </g>
-
-  <g id="title-black" filter="url(#matrix-invert)">
+  <g id="title-white">
+  	<text class='main-title' transform="matrix(1 0 0 1 85.7271 90.7852)">
+      <tspan x="0" y="0" class="title--name">Rodrigo Reyes</tspan>
+      <tspan x="0" y="41" class="job--title">Web designer</tspan>
+    </text>
+  </g>
+  <g id="title-black">
     <text class='main-title' transform="matrix(1 0 0 1 85.7271 90.7852)">
       <tspan x="0" y="0" class="title--name">Rodrigo Reyes</tspan>
       <tspan x="0" y="41" class="job--title">Web designer</tspan>
@@ -119,17 +110,7 @@
 <!-- //hiden kaltura player -->
 
 
-    <!--build:js js/main.min.js -->
-    <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/tether/dist/js/tether.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="bower_components/mustache.js/mustache.js"></script>
-    <script src="bower_components/jquery.easing/js/jquery.easing.js"></script>
-    <script src="bower_components/Snap.svg/dist/snap.svg.js"></script>
-    <!-- endbower -->
-    <script src="js/main.js"></script>
-    <!-- endbuild -->
+    <script src="js/main.min.js"></script>
 
 
 
