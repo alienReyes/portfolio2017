@@ -6370,16 +6370,12 @@ body {
 }
 
 .row.no-gutters {
-  margin-right: 0;
-  margin-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-right: -1px;
+  margin-left: -1px;
 }
 .row.no-gutters > [class^="col-"], .row.no-gutters > [class*=" col-"] {
-  padding-right: 0;
-  padding-left: 0;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-right: 1px;
+  padding-left: 1px;
 }
 
 .menu-container {
@@ -6406,6 +6402,7 @@ body {
   overflow: hidden;
   cursor: pointer;
   overflow: hidden;
+  margin-top: 1px;
 }
 .thumb--item figure {
   width: 100%;
