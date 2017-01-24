@@ -35,6 +35,32 @@
     height: calc( width - 1px);
     background-color: #000;
     overflow:hidden;
+
+    .block--color {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top:0;
+      left:0;
+      z-index: 100;
+        @include customTransition(transform,.5s,ease );
+        @include transform(translateY(100%));
+      background-color: black;
+    }
+
+    figcaption {
+      position: absolute;
+      text-align: center;
+      bottom:0%;
+      color:#fff;
+      z-index: 300;
+      opacity:0;
+        @include customTransition(opacity,.8s,ease );
+      h2 {
+          text-align: center;
+      }
+    }
+
     img {
 
       @include customTransition(all,.5s,ease );
@@ -54,6 +80,13 @@
        opacity:.5;
          @include transform(scale3d(1.2, 1.2, 1));
    }
+   .block--color {
+       @include transform(translateY(85%));
+   }
+   figcaption {
+     opacity:1;
+   }
+
 }
 
  //trick for aspect ratio
