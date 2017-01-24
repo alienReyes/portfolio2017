@@ -6369,6 +6369,19 @@ body {
   line-height: .5;
 }
 
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.row.no-gutters > [class^="col-"], .row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .menu-container {
   font-size: 1.2rem;
   line-height: 1;
@@ -6391,13 +6404,14 @@ body {
 
 .thumb--item {
   overflow: hidden;
+  cursor: pointer;
+  overflow: hidden;
 }
 .thumb--item figure {
   width: 100%;
   position: relative;
-  height: calc( width - 1px);
-  background-color: #000;
-  overflow: hidden;
+  background-color: #FFF;
+  margin: 0;
 }
 .thumb--item figure .block--color {
   width: 100%;
@@ -6431,6 +6445,9 @@ body {
   color: #fff;
   z-index: 300;
   opacity: 0;
+  padding-top: 2px;
+  padding-bottom: 0px;
+  padding-left: 10px;
   -moz-transition-property: opacity;
   -o-transition-property: opacity;
   -webkit-transition-property: opacity;
@@ -6445,7 +6462,11 @@ body {
   transition-timing-function: ease;
 }
 .thumb--item figure figcaption h2 {
+  font-family: "refrigerator-deluxe", sans-serif;
   text-align: center;
+  font-size: 1.8rem;
+  line-height: .8;
+  font-weight: 300;
 }
 .thumb--item figure img {
   -moz-transition-property: all;
@@ -6474,7 +6495,7 @@ body {
   transform: scale3d(1, 1, 1);
 }
 .thumb--item figure:hover img {
-  opacity: .5;
+  opacity: .4;
   -moz-transform: scale3d(1.2, 1.2, 1);
   -ms-transform: scale3d(1.2, 1.2, 1);
   -webkit-transform: scale3d(1.2, 1.2, 1);
