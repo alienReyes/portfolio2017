@@ -6335,6 +6335,7 @@ html {
 
 body {
   height: 100%;
+  padding-top: 125px;
 }
 
 .portfolio-thumb {
@@ -6352,6 +6353,7 @@ body {
 .main-header {
   padding-top: 35px;
   padding-bottom: 35px;
+  background: #fff;
 }
 
 .main-title {
@@ -6421,10 +6423,10 @@ body {
   -o-transition-property: -o-transform;
   -webkit-transition-property: -webkit-transform;
   transition-property: transform;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  -moz-transition-duration: 0.35s;
+  -o-transition-duration: 0.35s;
+  -webkit-transition-duration: 0.35s;
+  transition-duration: 0.35s;
   -moz-transition-timing-function: ease;
   -o-transition-timing-function: ease;
   -webkit-transition-timing-function: ease;
@@ -6443,16 +6445,16 @@ body {
   z-index: 300;
   opacity: 0;
   padding-top: 2px;
-  padding-bottom: 0px;
+  padding-bottom: 5px;
   padding-left: 10px;
   -moz-transition-property: opacity;
   -o-transition-property: opacity;
   -webkit-transition-property: opacity;
   transition-property: opacity;
-  -moz-transition-duration: 0.8s;
-  -o-transition-duration: 0.8s;
-  -webkit-transition-duration: 0.8s;
-  transition-duration: 0.8s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
   -moz-transition-timing-function: ease;
   -o-transition-timing-function: ease;
   -webkit-transition-timing-function: ease;
@@ -6514,14 +6516,47 @@ body {
   /* initial ratio of 1:1*/
 }
 
-#blackStripe {
-  opacity: 1;
+.selected figure:hover .block--color {
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
 }
-
-#whiteStripe {
-  fill: #FFF;
+.selected figure:hover figcaption {
+  opacity: 0;
+}
+.selected figure .block--color {
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
 }
 
 #title-black .main-title {
   fill: #000;
+}
+
+.trans-out {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+.trans-in {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.placeholder {
+  pointer-events: none;
+  position: absolute;
+  width: calc(100% + 5px);
+  height: calc(100vh + 5px);
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background: #fff;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
 }

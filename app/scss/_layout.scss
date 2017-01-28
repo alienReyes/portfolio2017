@@ -19,6 +19,7 @@ background-color: $highlight;
 .main-header {
   padding-top:35px;
   padding-bottom:35px;
+  background: #fff;;
 }
 
 .main-title {
@@ -50,6 +51,6 @@ h1 {
   & > [class*=" col-"] {
     padding-right:1px;
     padding-left: 1px;
-  
+
   }
 }

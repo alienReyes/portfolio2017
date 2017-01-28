@@ -28,11 +28,11 @@
 //main-grid-container
 
 .thumb--item {
+
   overflow: hidden;
   cursor: pointer;
     overflow:hidden;
     margin-top: 1px;
-
   figure {
     width: 100%;
     position: relative;
@@ -46,7 +46,7 @@
       top:0;
       left:0;
       z-index: 100;
-        @include customTransition(transform,.5s,ease );
+        @include customTransition(transform,.35s,ease );
         @include transform(translateY(100%));
       background-color: black;
     }
@@ -59,9 +59,9 @@
       z-index: 300;
       opacity:0;
       padding-top:2px;
-      padding-bottom: 0px;
+      padding-bottom:5px;
       padding-left: 10px;
-        @include customTransition(opacity,.8s,ease );
+        @include customTransition(opacity,.4s,ease );
       h2 {
           font-family: $refrigerator;
           text-align: center;
@@ -109,19 +109,56 @@
   }
 
 }
+.selected {
+  figure {
+    &:hover {
+      .block--color {
+          @include transform(translateY(0%));
+      }
+      figcaption {
+        opacity:0;
+      }
+    }
 
+    .block--color {
+        @include transform(translateY(0%));
+    }
+  }
+
+}
 //header
-#blackStripe {
-  opacity: 1;
-}
-
-#whiteStripe {
-  fill: #FFF;
-}
 
 
 #title-black {
   .main-title{
     fill:#000;
   }
+}
+
+  .trans-out {
+  	-webkit-transition: -webkit-transform $anim-time;
+  	transition: transform $anim-time;
+  }
+
+.trans-in {
+  -webkit-transition: -webkit-transform $anim-time;
+  transition: transform $anim-time;
+  -webkit-transition-timing-function: cubic-bezier(0.165,0.84,0.44,1);
+  transition-timing-function: cubic-bezier(0.165,0.84,0.44,1);
+}
+//effect
+
+.placeholder {
+	pointer-events: none;
+	position: absolute;
+	width: calc(100% + 5px);
+	height: calc(100vh + 5px);
+	z-index: 100;
+	top: 0;
+	left: 0;
+	background:#fff;
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+
+
 }
