@@ -33,6 +33,7 @@
   cursor: pointer;
     overflow:hidden;
     margin-top: 1px;
+    opacity:1;
   figure {
     width: 100%;
     position: relative;
@@ -46,8 +47,8 @@
       top:0;
       left:0;
       z-index: 100;
-        @include customTransition(transform,.35s,ease );
-        @include transform(translateY(100%));
+      //  @include customTransition(transform,.35s,ease );
+        @include transform(translateY(350px));
       background-color: black;
     }
 
@@ -74,7 +75,7 @@
 
     img {
 
-      @include customTransition(all,.5s,ease );
+    //  @include customTransition(all,.5s,ease );
       position:  absolute;
     	top: 0;
     	left: 0;
@@ -83,10 +84,10 @@
       width: auto;
       height: 100%;
       opacity:1;
-      @include transform(scale3d(1, 1, 1));
+     @include transform(scale3d(1, 1, 1));
 
  }
-&:hover {
+/*&:hover {
    img {
        opacity:.4;
          @include transform(scale3d(1.2, 1.2, 1));
@@ -98,7 +99,7 @@
      opacity:1;
    }
 
-}
+}*/
 
  //trick for aspect ratio
  &:before{

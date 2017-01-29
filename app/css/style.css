@@ -6405,12 +6405,26 @@ body {
   cursor: pointer;
   overflow: hidden;
   margin-top: 1px;
+  opacity: 1;
 }
 .thumb--item figure {
   width: 100%;
   position: relative;
   background-color: #FFF;
   margin: 0;
+  /*&:hover {
+     img {
+         opacity:.4;
+           @include transform(scale3d(1.2, 1.2, 1));
+     }
+     .block--color {
+         @include transform(translateY(85%));
+     }
+     figcaption {
+       opacity:1;
+     }
+  
+  }*/
 }
 .thumb--item figure .block--color {
   width: 100%;
@@ -6419,22 +6433,10 @@ body {
   top: 0;
   left: 0;
   z-index: 100;
-  -moz-transition-property: -moz-transform;
-  -o-transition-property: -o-transform;
-  -webkit-transition-property: -webkit-transform;
-  transition-property: transform;
-  -moz-transition-duration: 0.35s;
-  -o-transition-duration: 0.35s;
-  -webkit-transition-duration: 0.35s;
-  transition-duration: 0.35s;
-  -moz-transition-timing-function: ease;
-  -o-transition-timing-function: ease;
-  -webkit-transition-timing-function: ease;
-  transition-timing-function: ease;
-  -moz-transform: translateY(100%);
-  -ms-transform: translateY(100%);
-  -webkit-transform: translateY(100%);
-  transform: translateY(100%);
+  -moz-transform: translateY(350px);
+  -ms-transform: translateY(350px);
+  -webkit-transform: translateY(350px);
+  transform: translateY(350px);
   background-color: black;
 }
 .thumb--item figure figcaption {
@@ -6468,18 +6470,6 @@ body {
   font-weight: 300;
 }
 .thumb--item figure img {
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -moz-transition-timing-function: ease;
-  -o-transition-timing-function: ease;
-  -webkit-transition-timing-function: ease;
-  transition-timing-function: ease;
   position: absolute;
   top: 0;
   left: 0;
@@ -6492,22 +6482,6 @@ body {
   -ms-transform: scale3d(1, 1, 1);
   -webkit-transform: scale3d(1, 1, 1);
   transform: scale3d(1, 1, 1);
-}
-.thumb--item figure:hover img {
-  opacity: .4;
-  -moz-transform: scale3d(1.2, 1.2, 1);
-  -ms-transform: scale3d(1.2, 1.2, 1);
-  -webkit-transform: scale3d(1.2, 1.2, 1);
-  transform: scale3d(1.2, 1.2, 1);
-}
-.thumb--item figure:hover .block--color {
-  -moz-transform: translateY(85%);
-  -ms-transform: translateY(85%);
-  -webkit-transform: translateY(85%);
-  transform: translateY(85%);
-}
-.thumb--item figure:hover figcaption {
-  opacity: 1;
 }
 .thumb--item figure:before {
   content: "";

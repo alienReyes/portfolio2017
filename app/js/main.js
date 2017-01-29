@@ -13,13 +13,27 @@ $(document).ready(function() {
   });
 
 $('body').on('click', '.thumb--item', function(e) {
-  $(this).toggleClass('selected');
+//  $(this).toggleClass('selected');
 
-  setTimeout(function() {
-				  loadContent($(this))
-				}, 300);
+  //setTimeout(function() {
+		//		  loadContent($(this))
+			//	}, 300);
 
 })
+
+$('body').on({
+    mouseenter: function (e) {
+      var block =$(this).find('.block--color');
+      TweenMax.to(block, .5, {ease: Expo.easeInOut, y:286});
+    },
+    mouseleave: function (e) {
+      var block =$(this).find('.block--color');
+      TweenMax.to(block, .5, {ease: Expo.easeInOut, y:350});
+    }
+}, ".thumb--item");
+
+
+
 
 
 function init() {
@@ -54,7 +68,7 @@ dummy.style.transform = 'translate3d(' + (offset.left - 5) + 'px, ' + (offset.to
 ;
   $('.grid-container').append(dummy);
   setTimeout(function() {
-					
+
       }, 200);
 
 
