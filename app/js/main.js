@@ -24,6 +24,9 @@ $(document).ready(function() {
     var dummy = document.createElement ('div');
       $(dummy).addClass('placeholder');
       var offset = $(item).offset();
+      $(dummy).height(gridItemsContainer.outerHeight());
+      console.log ( gridItemsContainer.outerHeight()+"<<<<")
+      console.log (  $(dummy).height()+"___")
   //  $(dummy).addClass( 'trans-in');
 // set the width/heigth and position
       dummy.style.WebkitTransform = 'translate3d(' + (offset.left - 5) + 'px, ' + (offset.top - 5) + 'px, 0px) scale3d(' + $(item).width()/gridItemsContainer.width() + ',' + $(item).height()/getViewport('y') + ',1)';
